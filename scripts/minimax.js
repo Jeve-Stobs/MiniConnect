@@ -1,8 +1,8 @@
 // proper initialization
 if( 'function' === typeof importScripts) {
    
-	importScripts('config.js');
-	importScripts('board.js');
+	importScripts('scripts/config.js');
+	importScripts('scripts/board.js');
 
 	this.addEventListener('message', function(ev) {
 		var params = JSON.parse(ev.data);
