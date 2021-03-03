@@ -83,6 +83,3 @@ Minimax.alphabeta = function(board, depth, a, b, maximizingPlayer) {
         return v;
     }
 }
-
-
-
