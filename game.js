@@ -97,7 +97,7 @@ Game.prototype.switchTurn = function(){
 function Init() {
     var game = new Game();
 
-	game.worker = new Worker('scripts/minimax.js');
+	game.worker = new Worker('minimax.js');
 
     game.Board.initBoard();
     $("#restartGame").on('click', function(e) {
