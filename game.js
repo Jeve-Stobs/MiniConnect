@@ -23,7 +23,6 @@ Game.prototype.placeHumanMove = function (evt) {
 Game.prototype.generateComputerMove = function () {
   var game = this;
   //TODO: record time
-
   var deferred = jQuery.Deferred();
   var depth = $("#depthSelect").val();
 
