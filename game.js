@@ -79,7 +79,7 @@ Game.prototype.switchTurn = function () {
 
   if (isDrawn || score > Config.WINNING_SCORE - 100 || score < -Config.WINNING_SCORE + 100) {
     $("#winningAlert").show(); $("#scoreAlert").hide(); $("#waitingAlert").hide();
-    document.getElementById("winningAlert").innerHTML = isDrawn ? "The game is drawn!" : (score > 0 ? "You Win!" : "AI Wins!");
+    document.getElementById("winningAlert").innerHTML = isDrawn ? "The game is drawn!" : (score > 0 ? "You Win!" : "Alfred Wins!");
 
     game.Board.disableClick();
   } else {
