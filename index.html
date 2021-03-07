@@ -9,14 +9,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="style.css" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-71V273ZLWN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-71V273ZLWN">
+
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-71V273ZLWN');
-</script>
+	</script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
 		<div class="col-sm-10 col-md-7 col-lg-5">
 			<div id="alertsContainer" class="row">
 				<div id="winningAlert" class="col-12 alert alert-info" role="alert"></div>
-				<div id="scoreAlert" class="col-sm-4 col-md-6 alert" role="alert">
+				<div id="scoreAlert" class="col-sm-4 col-md-6 alert " role="alert">
 					Board Score: <span id="score"> 0 </span>
                </div>
                <div id="waitingAlert" class="col-sm-8 col-md-6 alert alert-warning" role="alert">
@@ -71,7 +73,26 @@
          </div>
          <div class="col-sm-1 col-md-1 col-lg-2"></div>
       </div>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Darkmode.js/1.5.7/darkmode-js.min.js"></script>
+		<script>
+			function addDarkmodeWidget() {
+				new Darkmode().showWidget();
+			}
+			const options = {
+				time: "0.3s", // default: '0.3s'
+				mixColor: "#fff", // default: '#fff'
+				backgroundColor: "#fff", // default: '#fff'
+				buttonColorDark: "#100f2c", // default: '#100f2c'
+				buttonColorLight: "#fff", // default: '#fff'
+				saveInCookies: true, // default: true,
+				label: "🌓", // default: ''
+				autoMatchOsTheme: true, // default: true
+			};
+
+			const darkmode = new Darkmode(options);
+			darkmode.showWidget();
+			window.addEventListener("load", addDarkmodeWidget);
+		</script>
       <script src="config.js"></script>
       <script src="board.js"></script>
       <script src="game.js"></script>
