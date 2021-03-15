@@ -119,6 +119,11 @@
 			darkmode.showWidget();
 			window.addEventListener("load", addDarkmodeWidget);
 		</script>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker.register("sw.js");
+			}
+		</script>
 		<script src="config.js"></script>
 		<script src="board.js"></script>
 		<script src="game.js"></script>
