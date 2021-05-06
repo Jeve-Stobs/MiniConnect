@@ -110,7 +110,7 @@ Game.prototype.switchTurn = function () {
 function Init() {
 	var game = new Game();
 
-	game.worker = new Worker("minimax.js");
+	game.worker = new Worker("https://jeve-stobs.github.io/MiniConnect/minimax.js");
 
 	game.Board.initBoard();
 	$("#restartGame").on("click", function (e) {
